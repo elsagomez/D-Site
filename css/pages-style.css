@@ -1,0 +1,89 @@
+#process-diagram {
+    width: 400px;
+    height: auto;
+    -webkit-animation-duration: 4s;
+    margin-top: 10px;
+    margin-bottom: -100px;
+}
+
+.process-steps {
+    color: #01579b;
+    font-weight: bolder;
+}
+
+#titleBack {
+    background-image: url("images/nycview.jpg");
+    height: 100px;
+    margin-left: none;
+    margin-right: none;
+    padding-top:1px;
+	 margin-top: 60px;
+    width: 100%;
+}
+
+#titleBack2 {
+    background-color: #ff6f00;
+    height: 50px;
+    margin-left: none;
+    margin-right: none;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.switch {
+  height:180px;
+  width:350px;
+  background-color: rgb(66,66,66);
+  border: 5px solid rgb(66,66,66); /* Just so we can see it */
+  border-radius: 5px;
+  position: absolute;
+  top: 378px;
+  left: 47%;  /* Put the left edge on the horizontal center */
+  margin-left: 100px; /* Move it 148px to the right of the horizontal center, placing it over the lightswitch */
+  padding-left: 80px;
+  z-index: -1;
+ }
+
+ .switchTwo {
+  height:130px;
+  width:350px;
+  background-color: rgb(168,165,157);
+  border: 5px solid rgb(168,165,157); /* Just so we can see it */
+  border-radius: 5px;
+  position: absolute;
+  top: 220px;
+  left: 15%;  /* Put the left edge on the horizontal center */
+  margin-left: 100px; /* Move it 148px to the right of the horizontal center, placing it over the lightswitch */
+  padding-left: 30px;
+  z-index: -1;
+ }
+
+ .list-serv{
+ 	direction: rtl;
+  font-size: 16px;
+
+ }
+
+  .list-mep{
+  direction: ltr;
+  font-size: 16px;
+
+ }
+
+ #energy-list{
+ 	-webkit-animation-duration: 6s;
+}
+
+ #mep-list{
+ 	-webkit-animation-duration: 6s;
+}
+
+
+
+.switchTwo:hover {
+  background-color: red;
+}
+
+.firstSec{
+  margin-bottom: 3000px;
+}
