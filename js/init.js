@@ -27,3 +27,10 @@ $('.dropdown-button').dropdown({
 $(document).ready(function(){
     $('.collapsible').collapsible();
   });
+ $(document).ready(function() {
+    $('select').material_select();
+  });
+
+ $(document).ready(function(){
+      $('.slider').slider();
+    });
