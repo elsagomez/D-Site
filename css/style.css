@@ -7,6 +7,9 @@
  *
  * Made By MaterializeCSS.com
  */
+*{
+    font-family: 'Lato', sans-serif;
+ }
 
 .white {
     position: fixed;
@@ -77,6 +80,7 @@ p {
 .jumbotext {
     line-height: 2rem;
     background-color: rgba(2, 41, 115, .5);
+    color: white;
 }
 
 .button-collapse {
@@ -112,15 +116,10 @@ p {
     width: auto;
 }
 
-.ecm-banner {
-    line-height: 2rem;
-    background-color: rgba(167, 165, 165, .7);
-}
 
-.waterBanner {
-    line-height: 2rem;
-    background-color: rgba(46, 111, 155, .7);
-}
+
+
+
 
 @media only screen and (max-width: 992px) {
     .parallax-container .section {
@@ -190,4 +189,31 @@ figure:hover+span {
 
 .page-footer{
     background-color: rgb(114,164,177);
+}
+
+
+#nycview{  
+-webkit-animation:zoom 5s infinite;
+    animation:zoom 5s infinite;
+    background:url("css/images/nycview.jpg") center center fixed no-repeat;
+}
+
+@-webkit-keyframes zoom{
+    0%,100%{
+        background-size:100%;
+    }
+    50%{
+        background-size:125%;
+    }
+}
+
+@keyframes zoom{
+
+    0%, 100%{
+        background-size:100%;
+    }
+    50%{
+        background-size:125%;
+    }
+
 }

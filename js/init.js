@@ -34,3 +34,17 @@ $(document).ready(function(){
  $(document).ready(function(){
       $('.slider').slider();
     });
+
+ $(window).scroll(
+    {
+        previousTop: 0
+    }, 
+    function () {
+    var currentTop = $(window).scrollTop();
+    if (currentTop < this.previousTop) {
+       $(".navi").show();
+    } else {
+        $(".navi").hide();
+    }
+    this.previousTop = currentTop;
+});

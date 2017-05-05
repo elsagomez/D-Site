@@ -7,16 +7,17 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="../css/style.css" media="screen,projection" />
     <link rel="stylesheet" href="../css/animate.css">
-    <link type="text/css" rel="stylesheet" href="../css/pages-style.css" media="screen,projection" />
+<link type="text/css" rel="stylesheet" href="../css/pages-style.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/national-style.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-     <nav class="white navi" role="navigation">
+    <nav class="white navi" role="navigation">
         <!-- Dropdown Structure -->
         <ul id="dropdown1" class="dropdown-content dropOption">
             <li><a class="grey-text" href="energy-solutions.html"><i class="material-icons">label</i><b>Energy Services</b></a></li>
@@ -27,16 +28,16 @@
         <div class="nav-wrapper container">
             <a id="logo-container" href="../index.html" class="brand-logo"><img id="logo" src="../css/images/DVM-logo.jpg" style="border: 0; float: left; margin-right: 15px; height: 62px; width: auto;" /> </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="../pages/aboutus.html"><b>About Us</b></a></li>
-                <li><a href="badges.html"><b>Our Success</b></a></li>
+                <li><a href="aboutus.html"><b>About Us</b></a></li>
+                <li><a href="our-success.html"><b>Our Success</b></a></li>
                 <!--    Dropdown Triger -->
                 <li><a class="dropdown-button" href="process.html" data-activates="dropdown1"><b>Our Services</b><i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a href="contactus.html"><b>Contact us</b></a></li>
             </ul>
         </div>
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="aboutus.html"><i class="material-icons">live_help</i>About Us</a></li>
-            <li><a href="our-success.html"><i class="material-icons">label</i>Our Services</a></li>
+            <li><a href="../pages/aboutus.html"><i class="material-icons">live_help</i>About Us</a></li>
+            <li><a href="process.html"><i class="material-icons">label</i>Our Services</a></li>
             <li><a href="energy-solutions.html"><i class="material-icons">label</i>Energy Services</a></li>
             <li><a href="facility-services.html"><i class="material-icons">label</i>Turnkey Facility Services</a></li>
             <li><a href="contactus.html"><i class="material-icons">email</i>Contact us</a></li>
@@ -45,80 +46,75 @@
     </nav>
 
     <div id="titleBack" class="z-depth-5">
-        <h2 class="header center white-text"><b>Our services in a nutshell</b></h2>
+        <h2 class="header center white-text"><b>National Services</b></h2>
     </div>
-    <div class="diagram-area">
+    <div class="container">
         <div class="section">
-            <!--   Icon Section   -->
-            <div class="row center">
-                <img class="animated rotateIn" id="process-diagram" src="../css/images/services-diagram.png">
+            <div class="row parmap">
+                <br> <p>DVM&#146s expertise permeates various industries, going from Commercial Properties to Health Care institutions. Our services are tailored to each individual client. We work to understand each one of their needs and attend their demands individually. We have analyzed, assesed and implemented energy related projects to a number of facilities accross the country, making a difference in their energy costs and efficiency.</p>
             </div>
+            <div class="row" id="clicked-state"></div>
+            
+<div class="row">
+<img class="states" src="../css/images/states/MAP.gif">
+<img class="states" src="../css/images/states/CT.gif">
+<a href="#MD"><img class="states" src="../css/images/states/MD.gif"></a>
+<img class="states" src="../css/images/states/NY.gif">
+<img class="states" src="../css/images/states/NJ.gif">
+<img class="states" src="../css/images/states/VA.gif">
+<a href="#WA"><img class="states" src="../css/images/states/WA.gif"></a>
+</div>
+</div>
         </div>
-        <div class="section">
-            <div class="animated slideInRight switch z-depth-5" id="energy-list" href="pages/energy-solutions.html">
-                <ul class="white-text list-serv">
-                    <li>LED Lighting</li>
-                    <li>EC Motors</li>
-                    <li>Water Conservation</li>
-                    <li>Rebate Management</li>
-                    <li>Energy Procurement</li>
-                    <li>Mechanical System Upgrades</li>
-                </ul>
-            </div>
         </div>
-        <div class="section">
-            <div class="animated slideInLeft switchTwo z-depth-5" id="mep-list" href="pages/energy-solutions.html">
-                <ul class="white-text list-mep">
-                    <li>Mechanical</li>
-                    <li>Electrical</li>
-                    <li>Plumbing</li>
-                    <li>Maintenance</li>
-                </ul>
-            </div>
-        </div>
+
+   
+<div class="map-section">
+    <div class="row">
+
+    <div id="map" style="width: 800px; height: 550px;"></div>
 </div>
 
 
-<div id="titleBack2" class="z-depth-5">
-        <h3 class="header center white-text">Our Process</h3>
-    </div>
 
+</div>
 
-   <div class="container">
-        <div class="section">
-            <div class="row">
-                <h5 class="process-steps">Site Walk</h5>
-                <p>Survey the site with facility experts to gather information and analyze the clients needs and opportunities.</p>
-                <h5 class="process-steps"> Interview</h5>
-                <p> Interview facilities team to study the operation of the facility and understand the goals and needs of the client. </p>
-                <h5 class="process-steps">Engineering Assessment </h5>
-                <p>Evaluate energy, environmental, operations and any other necessary data to offer turnkey sustainable solutions, as well as source reduction strategies to attain efficient energy consumption. Develop customized project design, recommendations and implementation strategies.</p>
-                <h5 class="process-steps">Project and Rebate Management</h5>
-                <p>DVM will manage the project throughout its life cycle: initiate, plan, execute, control and close the work to achieve project goals. We will capitalize on government and state incentives and grants to offset the project cost.</p>
-                <h5 class="process-steps">Supply and Installation</h5>
-                <p>Supply materials and complete installation at the highest of standards with our skilled, dedicated, in-house electrical and mechanical team.</p>
-                <hr>
-                <h5 class="process-steps">Operations and Maintenance </h5>
-                <p>Offer post-installation services such as maintenance, engineering and troubleshooting for Mechanical, Electrical and Plumbing.</p>
-                <h5 class="process-steps">Lifetime Care </h5>
-                <p>DVM helps assist our client&#146;s in developing the proper maintenance programs to ensure long life, efficiency and lower their failure rates.</p>
-            </div>
+<div class="container">
+<div class="row" id="MD"><h1>Maryland</h1></div>
+   <div class="row">
+       <div class="col s12 m6 l6">
+            <img class="caseStudies" src="../css/images/case-studies/aloft-hotel.jpg">
         </div>
-
-  </div>
- <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header jumbotext col s12 light">We work with DVM on many projects throughout our portfolio. They are very professional, knowledgeable and really understand the delicacy of working in high profile buildings. Communication is key for us and its reassuring to work with a company where you can have a direct line to the owners. </h5>
-                    <br>
-                    <h5 class="header jumbotext col s12 light right-align">Jay Resker -  Silverstein Properties</h5>
-                </div>
-            </div>
+        <div class="col s12 m6 l6">
+        <img class="caselogos" src="../css/images/case-studies/aloft-logo.jpg">
+        <h5>Aloft Hotel</h5>
+        <p><b>Address:</b> 1741 W Nursey Rd, Linthicon Heights, Maryland,  21090</p>
+        <p><b>Project Description:</b> LED Lighting Retrofit</p>
         </div>
-        <div class="parallax"><img src="../css/images/mep-services.jpg" alt="MEP Services"></div>
+</div>
+<hr>
+<div class="row" id="WA"><h1>Washington, DC</h1></div>
+     <div class='row'>
+        <div class="col s12 m6 l6">
+            <img class="caseStudies" src="../css/images/case-studies/marine-barracks.jpeg">
+        </div>
+        <div class="col s12 m6 l6">
+ 
+        <h5>Marine Barracks</h5>
+        <p> is a National Historic Landmark, the oldest post in the United States Marine Corps, the official residence of the Commandant of the Marine Corps since 1806, and main ceremonial grounds of the Corps.</p>
+        <p><b>Address:</b> 8th & I Streets SE, Washington, DC 20003</p>
+        <p><b>Project Description:</b> LED Lighting Retrofit</p>
+        </div>
     </div>
- <footer class="page-footer grey lighten-1">
+</div>
+
+</div>
+
+
+
+
+
+<footer class="page-footer grey lighten-1">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -172,12 +168,16 @@
 
 
 
-   <!--  -->
-    
-            <!--  Scripts-->
-            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <script src="../js/materialize.js"></script>
-            <script src="../js/init.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-</html>
+    <script src="../js/color.jquery.js"></script>
+
+  <script src="../js/raphael.js"></script>
+  <script src="../js/jquery.usmap.js"></script>
+  <script src="../js/color.jquery.js"></script>
+  <script src="../js/national-services-map.js"></script>
+ 
+
+    <script src="../js/materialize.js"></script>
+    <script src="../js/init.js"></script>
+</body>
