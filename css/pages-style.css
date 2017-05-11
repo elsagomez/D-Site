@@ -4,7 +4,7 @@
 
 
 
-p, ul, ol, li{
+a, p, ul, ol, li{
     font-size: 18px;
 }
 #process-diagram {
@@ -22,25 +22,38 @@ p, ul, ol, li{
     }
 
     .building-diagram-area{
-   background-color: rgba(97,98,98,.4);
+   background-color: #e0e0e0;
 
  
     }
 
+
+
 .diagram-incentives{
    background-color: #1D2247;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -18px;
+    height: 95px;
+    box-shadow: 10px 10px;
     color: white;
+
     }
 
+.financial-incentives{
+    background-color: #1D2247;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -18px;
+    color: white;
+}
 
 .process-steps {
     color: #01579b;
     font-weight: bolder;
 }
 
-.client-logos{
+.logos-area{
     background-color: rgba(231, 231, 231,.8);
     height: 300px ;
 }
@@ -64,6 +77,12 @@ p, ul, ol, li{
     width: 100%;
 }
 
+.testimonial{
+      line-height: 2rem;
+    background-color: rgba(2, 41, 115, .6);
+    color: white;
+}
+
 
 .switch {
     height: 200px;
@@ -81,6 +100,10 @@ p, ul, ol, li{
     padding-left: 80px;
     z-index: -1;
 }
+
+.logos-container{
+        height: 500px;  
+    }
 
 .switchTwo {
     height: 150px;
@@ -164,8 +187,113 @@ ul.dropdown-content.select-dropdown li span {
     margin-bottom: 0px;
 }
 
+#building-diagram{
+    width: 800px; 
+    height:auto; 
+    margin-top: 40px;
+}
+
+.logos-img{
+    width: 200px;
+    height:auto;
+}
+
+
+@media only screen and (max-width: 992px){
+    #building-diagram{
+        width: 800px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #building-diagram{
+       display: none;
+    }
+    .client-logos{
+    background-color: rgba(231, 231, 231,.8);
+    height: 1000px ;
+}
+.logos-img{
+    width: 150px;
+    height:auto;
+}
+.logos-title{
+    font-size: 24px;
+}
+
+.facility-list{
+    font-size: 14px;
+}
+#process-diagram{
+    width: 280px;
+    height:auto;
+}
+
+.testimonal{
+    height:400px;
+
+}
+.testimonial-text{
+    margin-top:-100px;
+}
+
+}
 
 
 
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
 
+@media only screen and (max-width: 600px) {
+    .logos-container{
+        height: 1000px;
+    }
+    .logos-area{
+        margin-top:-200px;
+        height: 510px;
+    }
+    #index-banner .section {
+        top: 0;
+    }
+
+#titleBack{
+    height: 200px;
+    width: auto;
+}
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    #energy-list{
+      display:none;
+    }
+    #mep-list{
+      display: none;
+    }
+
+}
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
 /* Optional: Makes the sample page fill the window. */

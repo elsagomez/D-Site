@@ -11,9 +11,19 @@
     font-family: 'Lato', sans-serif;
  }
 
+ a, p, ul, ol, li{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 22px;
+}
+
+
 .white {
     position: fixed;
     z-index: 1000;
+    height: 75px;
     top: 0;
     left: 0;
 }
@@ -25,6 +35,10 @@
 nav ul a,
 nav .brand-logo {
     color: #444;
+}
+
+.nav-text{
+    font-size: 14px;
 }
 
 .dropOption {
@@ -112,10 +126,13 @@ p {
     border: 0;
     float: center;
     margin-right: 15px;
-    height: 35px;
+    height: 20px;
     width: auto;
 }
 
+#footer-img{
+    margin-top: -18px;
+}
 
 
 
@@ -135,6 +152,16 @@ p {
     #index-banner .section {
         top: 0;
     }
+
+    .parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+.weoffer{
+    margin-bottom: 50px;
+}
 }
 
 @media screen and (max-width: 1100px) {

@@ -28,7 +28,7 @@
 
 .map-section{
 	
-	background-color: #1D2247;
+	background-color: #D8E2EC;
 	margin-top: -20px;
 }
 
@@ -44,8 +44,28 @@
 	margin-left: 100px;
 	height: auto;
 }
-/*
-.stateSection{
-	margin-top: 100px;
+
+.states-national-services{
+	display:none;
 }
-/**/
+
+
+
+
+@media only screen and (max-width: 900px) {
+	.states-national-services{
+		display: block;
+	}
+	.map-section{
+		display: none;
+	}
+
+}
+
+
+@media only screen and (max-width: 600px){
+#titleBack{
+    height: 180px;
+    width: auto;
+}
+}

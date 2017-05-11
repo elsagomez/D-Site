@@ -1,19 +1,27 @@
 $(document).ready(function() {
     $('#map').usmap({});
-  });
 
 // $('#map').usmap({
 //   stateStyles: {fill: 'gray'}
 // });
+  });
 
 
 $('#map').usmap({
   // The click action
   click: function(event, data) {
-    $('#clicked-state')
-      .text('You clicked: '+data.name)
-      .parent().effect('highlight', {color: '#C7F464'}, 2000);
+
+
+    if(data.name === "TX"){
+       $('#clicked-state')
+      .text('You clicked: '+data.name);
+    }
   }
+
+    // $('#clicked-state')
+    //   .text('You clicked: '+data.name)
+    //   .parent().effect('highlight', {color: '#C7F464'}, 2000);
+
 });
 
 function offsetAnchor() {
@@ -33,5 +41,4 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 
 // Set the offset when entering page with hash present in the url
 window.setTimeout(offsetAnchor, 0);
-
 
