@@ -28,17 +28,23 @@ h6{
     left: 0;
 }
 
-#index-banner {
-    margin-top: 50px;
-}
-
 nav ul a,
 nav .brand-logo {
     color: #444;
 }
 
+#index-banner {
+    margin-top: 50px;
+}
+
+
+
 .nav-text{
     font-size: 14px;
+}
+
+.dropdown-content{
+    overflow: visible !important;
 }
 
 .dropOption {
@@ -49,6 +55,11 @@ nav .brand-logo {
     color: #424242;
 }
 
+.parallax-container{
+    height: 1200px;
+}
+
+
 #message1{
 
  -webkit-animation-duration: 5s;
@@ -57,6 +68,39 @@ nav .brand-logo {
 #message2{
   -webkit-animation-duration: 5s;
 } 
+
+.states{
+    width: 100px;
+    height: auto;
+    margin:15px;
+   
+}
+
+.panel{
+    font-size: 24px;
+    display: none;
+
+ 
+}
+
+.processes{
+  
+    background-color: rgba(2, 41, 115,.7);
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.steps-headers{
+    display: inline;
+    float: left;
+
+}
+
+.states:hover{
+     opacity: .6; 
+   
+    margin-bottom: 0px;
+}
 /* label underline focus color */
 
 .input-field input[type=text]:focus {
@@ -134,8 +178,40 @@ p {
     margin-top: -18px;
 }
 
+.logos-area{
+    background-color: rgba(231, 231, 231,.8);
+    padding: 20px;
+    height: auto;
+}
+
+.logos-container{
+        height: 500px;
+        background-color: rgba(2, 41, 115, .3);
+    }
+
+.logos-img{
+    height: 75px;
+    width:auto;
+}
+        figure {
+    border-radius: 5px;
+    height: 150px;
+    width: 200px;
+    padding: 20px;
+    background: rgba(250,250,250,.9);
+    overflow: hidden;
+    float:right;
+}
+figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+    }
 
 
+.client-list-small{
+    display:none;
+}
 
 
 @media only screen and (max-width: 992px) {
@@ -162,6 +238,28 @@ p {
 .weoffer{
     margin-bottom: 50px;
 }
+
+    .client-logos{
+    background-color: rgba(231, 231, 231,.8);
+    height: 1000px ;
+}
+.logos-img{
+    width: 150px;
+    height:auto;
+}
+.logos-title{
+    font-size: 24px;
+    margin-top: -100px;
+}
+
+
+ .logos-container{
+        height: 1000px;
+    }
+    .logos-area{
+        margin-top:-200px;
+        height: 510px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -185,19 +283,9 @@ footer.page-footer {
     margin: 0;
 }
 
-figure {
-    width: 350px;
-    height: 250px;
-    border-radius: 25px;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    overflow: hidden;
-    float:right;
-}
-figure:hover+span {
-    bottom: -36px;
-    opacity: 1;
+
+.client-list-small{
+    display: none;
 }
 
 

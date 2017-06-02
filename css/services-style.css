@@ -1,0 +1,93 @@
+
+
+#message1{
+	background-color: rgba(2, 41, 115, .8);
+}
+
+.white {
+    position: fixed;
+    z-index: 1000;
+    height: 75px;
+    top: 0;
+    left: 0;
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+#motor-banner {
+    margin-top: 50px;
+    height: 380px;
+}
+
+.ecm-diagram{
+	width: 80%;
+	height: auto;
+}
+
+.dropOption {
+    width: 300px;
+}
+
+.dropdown-content{
+    overflow: visible !important;
+}
+
+.ecm-benefits{
+	background-color: #424242;
+}
+
+.efficiency-formula{
+	width: 75%;
+	height: auto;
+	float:right;
+}
+
+.efficiency{
+	background-color: white;
+}
+
+#message1{
+
+ -webkit-animation-duration: 5s;
+}
+
+#message2{
+  -webkit-animation-duration: 5s;
+} 
+
+.iconsContact {
+    border: 0;
+    float: center;
+    margin-right: 15px;
+    height: 20px;
+    width: auto;
+}
+
+.eon42{
+	width: 140%;
+	height: auto;
+}
+
+.ecm-dc{
+	width: 85%;
+	height: auto;
+}
+
+.ecm-banner{
+    background-color: #bdbdbd;
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.lighting-use{
+    width: 100%;
+    height: auto;
+}
+
+h5{
+ color: #01579b;
+}

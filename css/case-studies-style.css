@@ -1,0 +1,27 @@
+.un-plaza{
+	width: 90%;
+}
+
+#case-study-back{
+	background-color: #E0E4CC;
+	padding-top: 20px;
+	margin-top:-30px;
+	padding-bottom:20px;
+}
+
+.myIcons {
+    /*    display: block;
+    margin: 0 auto;*/
+    border: 0;
+    float: center;
+    margin-right: 15px;
+    height: 80px;
+    width: auto;
+}
+
+.carousel .carousel-item {
+width:300px !important;}
+
+.carousel-area{
+    margin-top: -80px;
+}

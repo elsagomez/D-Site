@@ -12,10 +12,12 @@ $('#map').usmap({
   click: function(event, data) {
 
 
-    if(data.name === "TX"){
-       $('#clicked-state')
-      .text('You clicked: '+data.name);
-    }
+document.location.href='our-success.html#'
+   
+
+  
+
+      
   }
 
     // $('#clicked-state')

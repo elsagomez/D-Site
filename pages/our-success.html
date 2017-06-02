@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="../css/materialize.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="../css/style.css" media="screen,projection" />
     <link rel="stylesheet" href="../css/animate.css">
-<link type="text/css" rel="stylesheet" href="../css/pages-style.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/pages-style.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="../css/national-style.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,8 +19,16 @@
 <body>
     <nav class="white navi" role="navigation">
         <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content dropOption">
-            <li><a class="grey-text" href="energy-solutions.html"><i class="material-icons">label</i><b>Energy Services</b></a></li>
+        <ul id='dropdown2' class='dropdown-content'>
+            <li><a class="indigo-text text-darken-4" href="services/ec-motors.html">EC Motors</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/led-lighting.html">LED Lighting</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/rebates-grants.html">Rebates Management</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/water-conservation.html">Water Conservation</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/energy-procurement.html">Energy Procurement</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/mechanical-upgrades.html">Mechanical Upgrades</a></li>
+        </ul>
+        <ul id="dropdown1" class="dropOption dropdown-content">
+            <li><a class="dropdown-button2 grey-text" href="energy-solutions.html" data-activates='dropdown2' data-hover="hover" data-activates='dropdown2' data-hover="hover" data-alignment="left"><i class="material-icons">label</i><b>Energy Services</b></a></li>
             <li><a class="grey-text" href="facility-services.html"><i class="material-icons">label</i><b>Turnkey Facility Services</b></a></li>
             <li class="divider"></li>
             <li><a class="grey-text" href="national-services.html"><i class="material-icons">label</i><b>National Services</b></a></li>
@@ -47,84 +55,127 @@
     <div id="titleBack" class="z-depth-5">
         <h2 class="header center white-text"><b>Our Success</b></h2>
     </div>
-<div class="container">
-<div class="row" id="MD"><h1>Maryland</h1></div>
-   <div class="row">
-       <div class="col s12 m6 l6">
-            <img class="caseStudies" src="../css/images/case-studies/aloft-hotel.jpg">
-        </div>
-        <div class="col s12 m6 l6">
-               <h5>Aloft Hotel</h5>
-        <p> The Aloft is a selected service hotel based on a modern design concept. The 155 room, six story building is block and plank construction with 9 foot guestroom ceilings and exposed concrete details. The hotel features a pool, fitness center, backyard area adjacent to the lobby and grab-and-go food service area with support kitchen.
-        <p><b>Address:</b> 1741 W Nursey Rd, Linthicon Heights, Maryland,  21090</p>
-        
-        </div>
-</div>
- <div class="row"><p><b>Project Description:</b> DVM Industries provided Aloft Hotel with new LED technology to fully replace old exterior fixtures. The new system installed creates a colorful and vivid look in the front side of the hotel. The new system also created energy bill savings of over 60% in lighing. In the interior of the hotel, lighting was also replaced with LED, improvind the lighting quality and reducing the cost of maintenance to zero. </p></div>
-<hr>
-<br>
-<div class="row">
-       <div class="col s12 m6 l6">
-            <img class="caseStudies" src="../css/images/case-studies/USDA.jpg">
-        </div>
-        <div class="col s12 m6 l6">
-   
-        <h5>US Department of Agriculture</h5>
-        <p>The Animal and Plant Health Inspection Service (APHIS) is an agency of the United States Department of Agriculture responsible of protecting  animal health, animal welfare, and plant health.</p>
-        <p><b>Address:</b> 9901 Powder Mill Road, Beltsville, Maryland 20705</p>
-        
-        </div>
-</div>
-
-<div class="row">
-    <p><b>Project Description:</b> DVM Industries completed the emergency switchgear upgrade for the APHIS building of the US Department of Agriculture. The automatic transfer switch (ATS) is a critical system component of the emergency power system, and proper maintenance of an ATS depends on the type of switch and its position in the critical power infrastructure.</p>
-</div>
-
-<hr>
-
-<div class="row" id="WA"><h1>Virginia</h1></div>
-     <div class='row'>
-        <div class="col s12 m6 l6">
-            <img class="caseStudies" src="../css/images/case-studies/hilton-mark.jpg">
-        </div>
-        <div class="col s12 m6 l6">
-
-        <h5>Hilton Mark Center</h5>
-        <p>Conveniently located near Washington, DC and Reagan International Airport, the Hilton Alexandria Mark Center is a 30 stories and 43 acres of botanical preserve.
-        <p><b>Address:</b> 5000 Seminary Road, Alexandria, VA</p>
-        
-        </div>
-    </div>
-
+    <br>
+    <div class="container">
     <div class="row">
-    <p><b>Project Description:</b><p> DVM Industries helped the Hilton Mark Center Hotel in Alexandria to fully replace old lighting technology fixtures with LED Technology, saving over the 60% of the lighting cost. The lighting quality was dramatically improved and the cost of maintenance was reduced to zero.   </p>
-</div>
+   <!--  <div class="col s12 m3 l3">
+   <br>
+   <a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">All Case Studies</a>
+   
+   <h5>By Location</h5>
+   <ul>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-new')">New York</a></li>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">Maryland</a></li>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">New Jersey</a></li>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">Virginia</a></li>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">Washington DC</a></li>
+   </ul>
+       
+   <h5>By Type of Project</h5>
+   <ul>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">Lighting</a></li>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">EC Motors</a></li>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">Mechanical Upgrades</a></li>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">Water Conservation</a></li>
+       <li><a href="#!" onclick="Materialize.showStaggeredList('#staggered-test')">MEP Services</a></li>
+   </ul>
+   </div> -->
+<!-- 
+    <div class="s12 m1 l1"></div> -->
 
+     <div class="col s12 m12 l12">
 
-<hr>
+     <ul>
 
-
-<div class="row" id="WA"><h1>Washington, DC</h1></div>
-     <div class='row'>
-        <div class="col s12 m6 l6">
-            <img class="caseStudies" src="../css/images/case-studies/marine-barracks.jpeg">
-        </div>
-        <div class="col s12 m6 l6">
- 
-        <h5>Marine Barracks</h5>
-        <p> is a National Historic Landmark, the oldest post in the United States Marine Corps, the official residence of the Commandant of the Marine Corps since 1806, and main ceremonial grounds of the Corps.</p>
-        <p><b>Address:</b> 8th & I Streets SE, Washington, DC 20003</p>
-        <p><b>Project Description:</b> LED Lighting Retrofit</p>
-        </div>
+     <li id="staggered-new">
+        <div class="row">
+    <div class="col s12 m5 l5">
+        <img class="caseStudies" src="../css/images/case-studies/un-list.png" style="width:100%; height:auto;">
     </div>
-</div>
-<br>
-<br>
+        <div class="col s12 m7 l7">
+            <h5>100 UN Plaza</h5>
+                <p><b>Summary: </b> LED Lighting Upgrade (retrofitting and new fixtures) in 52 floor Residential Building.</p>
+            <a class="waves-effect waves-light btn" href="case-studies/united-nations.html">Read More</a>
+    </div>
 
-</div>
-<footer id="footer-img" style="background-image: url('../css/images/world-map.png');">
+    </div>
+    </li>
+
+    <li>
+        <div class="row">
+    <div class="col s12 m5 l5">
+        <img class="caseStudies" src="../css/images/case-studies/doric-list.png" style="width:100%; height:auto;">
+    </div>
+        <div class="col s12 m7 l7">
+            <h5>Doric Apartments</h5>
+              <p><b>Summary: </b>Replacement of existing lighting technology to improve occupant experience.</p>
+            <a class="waves-effect waves-light btn"  href="case-studies/doric-apartments.html">Read More</a>
+    </div>
+
+    </div>
+    </li>
+
+     <li id="staggered-new">
+        <div class="row">
+    <div class="col s12 m5 l5">
+        <img class="caseStudies" src="../css/images/case-studies/brigham-list.png" style="width:100%; height:auto;">
+    </div>
+        <div class="col s12 m7 l7">
+            <h5>Brigham Park</h5>
+              <p><b>Summary: </b>LED Lighting Upgrade of two residential buildings at Brigham Park in Brooklyn,NY.</p>
+            <a class="waves-effect waves-light btn"  href="case-studies/brigham-park.html">Read More</a>
+    </div>
+
+    </div>
+    </li>
+
+     <li>
+        <div class="row">
+    <div class="col s12 m5 l5">
+        <img class="caseStudies" src="../css/images/case-studies/silver-towers-list.png" style="width:100%; height:auto;">
+    </div>
+        <div class="col s12 m7 l7">
+            <h5>Silver Towers</h5>
+              <p><b>Summary: </b>LED Lighting Upgrade at 1741 W Nursey Rd, Linthicon Heights, Maryland,  21090</p>
+            <a class="waves-effect waves-light btn"  href="case-studies/silver-towers.html">Read More</a>
+    </div>
+
+    </div>
+    </li>
+</ul>
+
+<ul>
+
+   <li>
+        <div class="row">
+    <div class="col s12 m5 l5">
+        <img class="caseStudies" src="../css/images/case-studies/airport-list.png" style="width:100%; height:auto;">
+    </div>
+        <div class="col s12 m7 l7">
+            <h5>Republic Airport</h5>
+              <p><b>Summary: </b>LED Lighting Upgrade(exterior and interior) at 7159 Airport Road, Farmingdale, NY.</p>
+            <a class="waves-effect waves-light btn"  href="case-studies/republic-airport.html">Read More</a>
+    </div>
+
+    </div>
+    </li>
+     
+
+
+    </ul>
+
+   
+
+
+
+     </div>
+
+    </div>
+    </div>
+   
+    <footer id="footer-img" style="background-image: url('../css/images/world-map.png');">
         <div class="container">
-        <br>
+            <br>
             <div class="row">
                 <div class="col l6 s12 weoffer">
                     <h4 class="grey-text text-darken-3"><b>We offer:</b></h4>
@@ -175,18 +226,12 @@
             </div>
         </div>
     </footer>
-
-
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
     <script src="../js/color.jquery.js"></script>
-
-  <script src="../js/raphael.js"></script>
-  <script src="../js/jquery.usmap.js"></script>
-  <script src="../js/color.jquery.js"></script>
-  <script src="../js/national-services-map.js"></script>
- 
-
+    <script src="../js/raphael.js"></script>
+    <script src="../js/jquery.usmap.js"></script>
+    <script src="../js/color.jquery.js"></script>
+    <script src="../js/national-services-map.js"></script>
     <script src="../js/materialize.js"></script>
     <script src="../js/init.js"></script>
 </body>
