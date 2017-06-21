@@ -73,9 +73,13 @@
         </div>
         <div class="parallax"><img src="../../css/images/services/rebate-management.jpeg" alt="Turnkey Facility and Energy Solutions"></div>
     </div>
-
-<div class="container">
 <br>
+<div class="container">
+<div class="row title-subtitle">
+ <h3>Rebates and Grant Management</h3>
+ <h5>Offset the capital cost of your energy projects</h5>
+
+</div>
     <div class="row">
     <p>Upfront costs are a major barrier to implementing energy efficiency projects in businesses. An important goal of energy efficiency policies and programs is to help minimize these upfront project costs so owners are encouraged to invest in energy reduction improvements. Savings and time investment are factors to consider when an energy upgrade project is offered to the customers.</p>
     <p>Many utilities in New York and other states offer incentives, grants or rebates to buildings that install systems that reduce their overall energy consumption. These monetary facilities are funded by charging utility customers in specific rate clases, a monthly bill adjustment factor. Yet, participating in these programs is time consuming, complicated and sometimes expensive. </p>
@@ -141,30 +145,30 @@ permanent energy improvements for new construction and existing buildings, inclu
 <footer id="footer-img" style="background-image: url('../../css/images/world-map.png');">
         <div class="container">
         <br>
-            <div class="row">
+            <div class="row" id="form-help">
                 <div class="col l6 s12 weoffer">
                     <h4 class="grey-text text-darken-3"><b>We offer:</b></h4>
                     <br>
-                    <h6 class="indigo-text text-darken-4"><img class="iconsContact" src="../../css/images/globe.png">Energy Rebates Management</h6>
-                    <h6 class="indigo-text text-darken-4"><img class="iconsContact" src="../../css/images/globe.png">Free consultation</h6>
-                    <h6 class="indigo-text text-darken-4"><img class="iconsContact" src="../../css/images/globe.png">Project Management</h6>
-                    <h6 class="indigo-text text-darken-4"><img class="iconsContact" src="../../css/images/globe.png">Lifetime Care Facility Services</h6>
-                    <h6 class="indigo-text text-darken-4"><img class="iconsContact" src="../../css/images/globe.png">Energy Procurement</h6>
-                    <h6 class="indigo-text text-darken-4"><img class="iconsContact" src="../../css/images/globe.png">Local Laws Compliance</h6>
-                    <h6 class="indigo-text text-darken-4"><img class="iconsContact" src="../../css/images/globe.png">Energy Auditing </h6>
+                    <a href="rebates-grants.html"><h6 class="indigo-text text-darken-4 "><img class="iconsContact " src="../../css/images/globe.png ">Energy Rebates Management</h6></a>
+                    <a href="../contactus.html"><h6 class="indigo-text text-darken-4 "><img class="iconsContact " src="../../css/images/globe.png ">Free consultation</h6></a>
+                    <a href="../process.html"><h6 class="indigo-text text-darken-4 "><img class="iconsContact " src="../../css/images/globe.png ">Project Management</h6>
+                    <a href="../facility-services.html"><h6 class="indigo-text text-darken-4 "><img class="iconsContact " src="../../css/images/globe.png ">Lifetime Care Facility Services</h6></a>
+                    <a href="energy-procurement.html"><h6 class="indigo-text text-darken-4 "><img class="iconsContact " src="../../css/images/globe.png ">Energy Procurement</h6></a>
+                    <a href="mechanical-upgrades.html"><h6 class="indigo-text text-darken-4 "><img class="iconsContact " src="../../css/images/globe.png ">Mechanical Upgrades</h6>
+                    <a href="../aboutus.html"><h6 class="indigo-text text-darken-4 "><img class="iconsContact " src="../../css/images/globe.png ">Energy Auditing </h6>
                 </div>
                 <div class="row">
                     <h4 class="grey-text text-darken-3"><b>How can we help?</b></h4>
-                    <form action="mailto:marketing@dvmindustries.us" method="post" enctype="text/plain" class="col s6">
+                    <form id="contactus-form" class="col s6">
                         <div class="row">
                             <div class="input-field col s12 m6 l6">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate">
+                                <input id="name" type="text" class="validate">
                                 <label class="indigo-text text-darken-4" for="icon_prefix">First Name</label>
                             </div>
                             <div class="input-field col s12 m6 l6">
                                 <i class="material-icons prefix">phone</i>
-                                <input id="icon_telephone" type="tel" class="validate">
+                                <input id="phone" type="tel" class="validate">
                                 <label class="indigo-text text-darken-4" for="icon_telephone">Telephone</label>
                             </div>
                             <div class="input-field col s12">
@@ -174,10 +178,10 @@ permanent energy improvements for new construction and existing buildings, inclu
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">message</i>
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <textarea id="message" class="materialize-textarea"></textarea>
                                 <label class="indigo-text text-darken-4" for="textarea1">Message</label>
                             </div>
-                            <button class="waves-effect waves-light grey darken-3 btn right" type="submit" name="action">Submit
+                            <button class="waves-effect waves-light grey darken-3 btn right" type="submit" id="submit" name="action">Submit
                                 <i class="material-icons right white-text">send</i>
                             </button>
                         </div>
@@ -203,6 +207,8 @@ permanent energy improvements for new construction and existing buildings, inclu
      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../../js/materialize.js"></script>
     <script src="../../js/init.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script src="../../js/contactus.js"></script>
 </body>
 
 </html>

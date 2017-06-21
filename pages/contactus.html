@@ -59,44 +59,34 @@
     <div class="container">
         <div class="section">
         <br>
-            <h4 class="contact-list"><b>Get in touch with DVM.</b> Let&#39s talk about your project!</h4><hr></div>
+            <h4 class="contact-list"><b>Get in touch with DVM.</b> Let&#39;s talk about your project!</h4><hr></div>
         <div class="section">
             <div class="row">
                 <div class="col s12 m8 l8">
                     <div class="row">
-                        <form action="mailto:marketing@dvmindustries.us" method="post" enctype="text/plain" class="col s12">
+                        <form class="col s12" id="contactus-form">
                             <div class="row">
                                 <div class="input-field col s10">
                                     <i class="material-icons prefix contact-icon">account_circle</i>
-                                    <input id="icon_prefix" type="text" class="validate">
+                                    <input id="name" type="text" class="validate">
                                     <label for="icon_prefix">First Name</label>
                                 </div>
                                 <div class="input-field col s10">
                                     <i class="material-icons prefix contact-icon">phone</i>
-                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <input id="phone" type="tel" class="validate">
                                     <label for="icon_telephone">Telephone</label>
                                 </div>
-                                <div class="row">
-                                <div class="input-field col s10">
-                                <i class="material-icons prefix contact-icon">offline_pin</i>
-                                    <select multiple>
-                                        <option value="" disabled selected>Choose your option</option>
-                                        <option value="1">LED Lighting</option>
-                                        <option value="2">EC Motors</option>
-                                        <option value="3">Rebates and Grants</option>
-                                        <option value="4">Energy Procurement</option>
-                                        <option value="5">MEP (Facility) Services</option>
-                                        <option value="6">National Services</option>
-                                    </select>
-                                    <label>Services you are interested in</label>
-                                </div>
+                                 <div class="input-field col s10">
+                                    <i class="material-icons prefix contact-icon">email</i>
+                                    <input id="email" type="tel" class="validate">
+                                    <label for="email" data-error="wrong" data-success="right">Email</label>
                                 </div>
                                 <div class="input-field col s10">
                                     <i class="material-icons prefix contact-icon">comment</i>
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <textarea id="message" class="materialize-textarea"></textarea>
                                     <label for="textarea1">Message</label>
                                 </div>
-                                <button class="waves-effect waves-light grey darken-3 btn-large left" type="submit" name="action">Submit
+                                <button class="waves-effect waves-light grey darken-3 btn-large left" type="submit" id="submit" name="action">Submit
                                     <i class="material-icons right white-text">send</i>
                                 </button>
                             </div>
@@ -140,6 +130,8 @@
     <script src="../js/init.js"></script>
     <script src="../js/contactmap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApFAfpOC16Pn3k1L3iUoXAPL-ySn199nU&callback=initMap" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script src="../js/contactus.js"></script>
 </body>
 
 </html>

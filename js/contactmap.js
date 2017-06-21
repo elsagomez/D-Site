@@ -168,7 +168,8 @@ function initMap() {
         // to the map type control.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.855073, lng: -73.890048},
-          zoom: 11,
+          zoom: 15,
+          scrollwheel:  false,
           mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
                     'styled_map']

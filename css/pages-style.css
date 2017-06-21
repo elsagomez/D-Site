@@ -244,16 +244,70 @@ nav .brand-logo {
     background: blue;
 }
 
+#plumbing{
+    border: 0; 
+    float: right; 
+    margin-left: 25px; 
+    height: 300px; 
+    width: auto;
+}
+
+#mechanical{
+
+    border: 0; float: right; margin-right: 15px; height: 300px; width: auto;
+}
+
+#electrical{
+    border: 0; float: left; margin-right: 15px; height: 300px; width: auto;
+}
+
+
 @media only screen and (max-width: 992px){
     #building-diagram{
-        width: 800px;
+        width: 600px;
         height: auto;
+    }
+
+    #plumbing{
+    border: 0; 
+    float: right; 
+    margin-top: 50px; 
+    height: 170px; 
+    width: auto;
+}
+
+#mechanical{
+
+    border: 0; float: right; margin-top: 50px; height: 170px; width: auto;
+}
+
+#electrical{
+    border: 0; float: right; margin-top: 50px; height: 170px; width: auto;
+}
+.facility-parallax{
+    display:none;
+
+}
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+
+    #aboutus-test{
+        display:none;
     }
 }
 
 @media only screen and (max-width: 600px){
-    #building-diagram{
+    .building-diagram-area{
        display: none;
+    }
+    .diagram-incentives{
+        height: 170px;
+        
     }
     .client-logos{
     background-color: rgba(231, 231, 231,.8);
@@ -266,7 +320,13 @@ nav .brand-logo {
 .logos-title{
     font-size: 24px;
 }
-
+.logos-container{
+    margin-top: -200px;
+    z-index: -1;
+}
+.text-modify{
+    font-size: 15px
+}
 
 .facility-list{
     font-size: 14px;
@@ -285,21 +345,32 @@ nav .brand-logo {
     margin-top:-100px;
 }
 
+.facility-parallax{
+    display:none;
+
+}
+#aboutus-test{
+        display:none;
+    }
+
+#plumbing{
+    border: 0; 
+    float: right; 
+    margin-top: 50px; 
+    height: 100px; 
+    width: auto;
+}
+
+#mechanical{
+
+    border: 0; float: right; margin-top: 50px; height: 100px; width: auto;
+}
+
+#electrical{
+    border: 0; float: right; margin-top: 50px; height: 100px; width: auto;
 }
 
 
-
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
     .logos-container{
         height: 1000px;
     }
@@ -319,6 +390,10 @@ nav .brand-logo {
   position: relative;
   overflow: hidden;
   height: 600px;
+}
+
+#form-help{
+    margin-left: 5px;
 }
 
 
