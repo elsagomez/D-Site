@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+     <link type="text/css" rel="stylesheet" href="assets/css/materialize.css" media="screen,projection" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
+
+
+	 <title>Spec Sheets Finder</title>
+	
+</head>
+
+<body>
+
+    <nav class="navi white" role="navigation">
+        <!-- Dropdown Structure <--></-->
+        <ul id='dropdown2' class='dropdown-content'>
+            <li><a class="indigo-text text-darken-4" href="services/energy/ec-motors.html">EC Motors</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/energy/led-lighting.html">LED Lighting</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/energy/rebates-grants.html">Rebates Management</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/energy/water-conservation.html">Water Conservation</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/energy/energy-procurement.html">Energy Procurement</a></li>
+            <li><a class="indigo-text text-darken-4" href="services/energy/mechanical-upgrades.html">Mechanical Upgrades</a></li>
+        </ul>
+        <ul id="dropdown1" class="dropOption dropdown-content">
+            <li><a class="dropdown-button2 grey-text" href="services/energy-solutions.html" data-activates='dropdown2' data-hover="hover" data-activates='dropdown2' data-hover="hover" data-alignment="left"><i class="material-icons">label</i><b>Energy Services</b></a></li>
+            <li><a class="grey-text" href="services/facility-services.html"><i class="material-icons">label</i><b>Turnkey Facility Services</b></a></li>
+            <li class="divider"></li>
+            <li><a class="grey-text" href="services/national-services.html"><i class="material-icons">label</i><b>National Services</b></a></li>
+        </ul>
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo"><img id="logo" src="assets/images/DVM-logo.png" style="border: 0; float: left; margin-right: 15px; height: 68px; width: auto;" /> </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="nav-text" href="index.html"><b>Home</b></a></li>
+                <li><a class="nav-text" href="aboutus.html"><b>About Us</b></a></li>
+                <li><a class="nav-text" href="our-success.html"><b>Our Success</b></a></li>
+                <!--    Dropdown Triger -->
+                <li><a class="dropdown-button nav-text" href="process.html" data-activates="dropdown1" data-beloworigin="true"><b>Our Services</b><i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="nav-text" href="contactus.html"><b>Contact us</b></a></li>
+            </ul>
+        </div>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="aboutus.html"><i class="material-icons">live_help</i>About Us</a></li>
+            <li><a href="process.html"><i class="material-icons">label</i>Our Services</a></li>
+            <li><a href="services/energy-solutions.html"><i class="material-icons">label</i>Energy Services</a></li>
+            <li><a href="services/facility-services.html"><i class="material-icons">label</i>Turnkey Facility Services</a>
+                <li><a href="services/national-services.html"><i class="material-icons">label</i>National Services</a></li>
+                <li><a href="services/contactus.html"><i class="material-icons">email</i>Contact us</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+
+
+    <div id="index-banner-spec" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br>
+                <br>
+                <h1 id="message1" class="header animated slideInRight center white-text text-lighten-2">DVM Industries Spec Finder</h1>
+           <br><br><br>
+                   <input class="form-control text-center" type="text" id="search" placeholder="Type any product or model number"></input>
+
+                </div>
+                
+               
+            </div>
+       
+        <div class="parallax"><img src="assets/images/specs.jpg" alt="Turnkey Facility and Energy Solutions"></div>
+  </div>
+<br><br>
+<div class="container centered">
+
+<div class="row">
+  <h3 class="centered">Matching Specs</h3>
+  <hr class="my-4">
+</div>
+
+<!-- <div class="container"> -->
+
+  <div id="tableDiv" style="margin-top: 40px">
+        Table will generate here.
+    </div>
+</div>
+<!-- <table class="table" id="spec-table">
+    <tr>
+        <th scope="col">Model number</th>
+        <th scope="col">Description</th>
+        <th scope="col" >Spec Sheet</th>
+    </tr>
+</table> -->
+<!-- </div> -->
+
+ <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="assets/js/materialize.js "></script>
+    <script src="assets/js/init.js "></script>
+<script src="assets/scripts/jquery-3.3.1.js"></script>
+  <script src="assets/js/loader.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

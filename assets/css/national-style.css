@@ -1,0 +1,66 @@
+*{
+    font-family: 'Lato', sans-serif;
+ }
+
+
+#map{
+	margin-top: -20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:30px;
+}
+
+#titleBack{
+    background-color: #105f97;
+    height: 100px;
+    margin-left: none;
+    margin-right: none;
+    padding-top: 1px;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.parmap{
+	margin-top: -20px
+
+}
+
+
+.caseStudies{
+
+	width: 400px;
+	height: auto;
+}
+
+.caselogos{
+
+	width: 200px;
+	margin-left: 100px;
+	height: auto;
+}
+
+.states-national-services{
+	display:none;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+	.states-national-services{
+		display: block;
+	}
+	#map{
+		display: none;
+	}
+
+}
+
+
+@media only screen and (max-width: 600px){
+#titleBack{
+    height: 180px;
+    width: auto;
+}
+}
