@@ -293,6 +293,8 @@ nav .brand-logo {
     color: #424242;
 }
 
+
+
 @media screen and (max-width: 992px) {
     #building-diagram {
         width: 600px;
@@ -318,6 +320,8 @@ nav .brand-logo {
         display: none;
     }
 }
+
+
 
 
 
