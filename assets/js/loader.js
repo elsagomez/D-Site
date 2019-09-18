@@ -1065,6 +1065,17 @@ var json_obj = [
     "category": "Architectural Lights",
     "spec_name": "led-arch-3.pdf",
     "price": 1
+  },
+  {
+    "Product Type": "goods",
+    "internal_code": "LTR300-WW_linearRibbon",
+    "model_number": "LTR300-WW",
+    "description": "GM-12Vdc Standard Output Flexible Led Linear Ribbon - 5M 3500K",
+    "watts": 0,
+    "manufacturer": "GM Lighting",
+    "category": "Architectural Lights",
+    "spec_name": "LTR300-WW_linearRibbon.pdf",  
+    "price": 212.59
   }
 ];
 
