@@ -19,7 +19,28 @@
     <!--Website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script>
+        function onSubmit(token) {
+          alert('thanks ' + document.getElementById('field').value);
+        }
+    
+        function validate(event) {
+          event.preventDefault();
+          if (!document.getElementById('field').value) {
+            alert("You must add text to the required field");
+          } else {
+            grecaptcha.execute();
+          }
+        }
+    
+        function onload() {
+          var element = document.getElementById('submit');
+          element.onclick = validate;
+        }
+      </script>
+       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -252,9 +273,9 @@
 
                 <div class="col l6 s12" id="form-help">                  
                    <h4 class="grey-text text-darken-3"><b>How can we help?</b></h4>
+                
 
-
-<form action='https://forms.zohopublic.com/dvmind/form/ContactusMap/formperma/EQrQpH1IFj9Iw-Wi59faoRj4RT4cafO8cHlUp2B4bbs/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' onSubmit="zf_validateandsubmitdata();"><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+<form action='https://forms.zohopublic.com/dvmind/form/ContactusMap/formperma/EQrQpH1IFj9Iw-Wi59faoRj4RT4cafO8cHlUp2B4bbs/htmlRecords/submit' name='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' onSubmit="zf_validateandsubmitdata();"><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
 <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
 <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
 <!-- <h2>Contact us - Map</h2> -->
@@ -306,7 +327,12 @@
 </label>
 <textarea></textarea>
 
-<button class="waves-effect waves-light grey darken-3 btn-large right type="submit"><em>Submit</em></button></form><script type="text/javascript">var isSalesIQIntegrationEnabled = false;
+<div id='recaptcha' class="g-recaptcha"
+          data-sitekey="6Lc5i1QUAAAAAASj5NihIKmfWyekX05aVFCVIAry"
+          data-callback="onSubmit"
+          data-size="invisible"></div>
+
+<button class="waves-effect waves-light grey darken-3 btn-large right" type="submit"><em>Submit</em></button></form><script type="text/javascript">var isSalesIQIntegrationEnabled = false;
 function zf_validateandsubmitdata(){
 if(isSalesIQIntegrationEnabled){
 var visitorinfo = {};
@@ -360,7 +386,7 @@ visitorinfo.contactnumber = salesIQValue;
 parent.postMessage(JSON.stringify({ type: 'zoho.salesiq.apimessage', visitor: visitorinfo } ), '*');// No I18N
 }
 }</script>
-
+<script>onload();</script>
 
 
                
@@ -383,4 +409,3 @@ parent.postMessage(JSON.stringify({ type: 'zoho.salesiq.apimessage', visitor: vi
 </body>
 
 </html>
-1
